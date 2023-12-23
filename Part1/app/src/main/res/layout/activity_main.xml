@@ -7,13 +7,27 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/bandeTextView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#55209F"
+        android:text="tp esilv"
+        android:textColor="@android:color/white"
+        android:gravity="center_vertical|start"
+        android:paddingStart="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20sp"/>
+
     <ImageView
         android:id="@+id/imageTop"
         android:layout_width="160dp"
         android:layout_height="150dp"
         android:src="@drawable/capture"
-        android:layout_marginTop="40dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/bandeTextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
